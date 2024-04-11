@@ -2,69 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Academic Profile</title>
     <style>
-        /* Style for the sidebar */
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Book Antiqua', serif;
+            color: #333;
+        }
+
+        /* Sidebar styles */
         .sidebar {
-            height: 100%;
-            width: 200px;
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #85DCB; /* Eggshell white background */
+            width: 200px;
+            height: 100%;
+            background-color: #85DCB;
             padding-top: 20px;
-            border-radius: 10px; /* Rounded corners */
-            overflow: hidden; /* Ensures rounded corners are applied properly */
-            font-family: 'Book Antiqua', serif; /* Set font family to Book Antiqua */
-            display: -webkit-flex; /* Flexbox */
-            display: flex; /* Flexbox */
-            -webkit-flex-direction: column; /* Flexbox */
-            flex-direction: column; /* Flexbox */
-            -webkit-justify-content: center; /* Flexbox */
-            justify-content: center; /* Flexbox */
-            -webkit-align-items: center; /* Flexbox */
-            align-items: center; /* Flexbox */
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        
-        /* Style for the sidebar links */
+
         .sidebar a {
             padding: 10px;
             text-decoration: none;
             font-size: 18px;
-            color: black; /* Changed link color to black */
+            color: black;
             display: block;
-            position: relative;
-            transition: background-color 0.3s ease; /* Smooth transition */
+            transition: background-color 0.3s ease;
         }
-        
-        /* Change color of letters on hover */
-        .sidebar a span {
-            position: relative;
-            z-index: 1; /* Ensure letters are above the background */
-        }
-        
-        /* Change color of letters on hover */
+
         .sidebar a:hover {
-            background: linear-gradient(rgba(204, 204, 204, 0.8), rgba(204, 204, 204, 0.5)); /* Gradient for smooth blend */
-            z-index: -1; /* Pushes the background below the text */
-            border-radius: 5px; /* Rounded corners to match the shape of letters */
+            background: linear-gradient(rgba(204, 204, 204, 0.8), rgba(204, 204, 204, 0.5));
+            border-radius: 5px;
         }
-        
-        /* Main content area */
+
+        /* Content styles */
         .content {
-            background-color: #cad7ca; /* Eggshell white background */
-            border-radius: 10px; /* Rounded corners */
             margin-left: 220px;
             padding: 20px;
-            font-family: 'Book Antiqua', serif; /* Set font family to Book Antiqua */
-            color: #333; /* Text color */
-            display: -webkit-flex; /* Flexbox */
-            display: flex; /* Flexbox */
-            -webkit-flex-direction: column; /* Flexbox */
-            flex-direction: column; /* Flexbox */
-            -webkit-flex-grow: 1; /* Flexbox */
-            flex-grow: 1; /* Flexbox */
         }
 
         .profile {
@@ -73,62 +56,65 @@
         }
 
         .profile img {
-            border-radius: 50%; /* Rounded image */
-            width: 200px; /* Adjusted width */
-            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%;
+            width: 200px;
+            height: auto;
             margin-bottom: 15px;
         }
 
         .profile h2 {
             margin: 0;
             font-size: 24px;
-            color: #333; /* Title color */
+            color: #333;
         }
 
         .profile h3 {
             margin: 0;
             font-size: 18px;
-            color: #666; /* Subtitle color */
+            color: #666;
         }
 
         .profile h4.email {
-            margin: 5px 0; /* Adjusted margins */
+            margin: 5px 0;
             font-style: italic;
-            color: #666; /* Email color */
+            color: #666;
         }
 
         .profile p {
             margin: 10px 0;
             font-size: 16px;
             line-height: 1.5;
-            text-align: left; /* Justify text to the left */
-            font-style: italic; /* Change font style to italic */
+            text-align: left;
+            font-style: italic;
         }
 
         /* Two-column layout */
         .columns {
-            display: -webkit-flex; /* Flexbox */
-            display: flex; /* Flexbox */
-            -webkit-justify-content: space-between; /* Flexbox */
-            justify-content: space-between; /* Flexbox */
+            display: flex;
+            justify-content: space-between;
         }
 
         .column {
-            -webkit-flex-basis: 48%; /* Flexbox */
-            flex-basis: 48%; /* Flexbox */
+            width: 48%;
         }
 
-        /* Reverting to previous colors */
+        .column ul {
+            list-style: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        /* Color classes */
         .dark-blue {
-            color: #1a237e; /* Dark blue */
+            color: #1a237e;
         }
 
         .light-blue {
-            color: #2196f3; /* Light blue */
+            color: #2196f3;
         }
 
         .green {
-            color: #4caf50; /* Green */
+            color: #4caf50;
         }
     </style>
 </head>
@@ -156,7 +142,7 @@
         </p>
 
         <div class="columns">
-            <div class="column" style="text-align: left;">
+            <div class="column">
                 <h4>Interests</h4>
                 <ul>
                     <li>Third Language acquisition</li>
@@ -167,7 +153,7 @@
                     <li>Statistics/Data visualization</li>
                 </ul>
             </div>
-            <div class="column" style="text-align: left;">
+            <div class="column">
                 <h4>Education</h4>
                 <ul>
                     <li>PhD in Second Language Acquisition and Bilingualism, 2023 - Rutgers University</li>

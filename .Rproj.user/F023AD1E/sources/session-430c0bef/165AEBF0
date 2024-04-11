@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/website_tests/hello.html",
     "project_path": "hello.html",
     "type": "html",
-    "hash": "0",
+    "hash": "917896976",
     "contents": "",
     "dirty": false,
     "created": 1712844346071.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "183,0",
-        "scrollLine": "163"
+        "cursorPosition": "24,32",
+        "scrollLine": "35"
     },
     "folds": "",
-    "lastKnownWriteTime": 1712844348,
+    "lastKnownWriteTime": 1712844622,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1712844348491,
+    "last_content_update": 1712844622291,
     "read_only": false,
     "read_only_alternatives": []
 }
