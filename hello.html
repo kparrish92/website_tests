@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Profile</title>
+    <style>
+        /* Style for the sidebar */
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #85DCB; /* Eggshell white background */
+            padding-top: 20px;
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Ensures rounded corners are applied properly */
+            font-family: 'Book Antiqua', serif; /* Set font family to Book Antiqua */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Style for the sidebar links */
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black; /* Changed link color to black */
+            display: block;
+            position: relative;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        
+        /* Change color of letters on hover */
+        .sidebar a span {
+            position: relative;
+            z-index: 1; /* Ensure letters are above the background */
+        }
+        
+        /* Change color of letters on hover */
+        .sidebar a:hover {
+            background: linear-gradient(rgba(204, 204, 204, 0.8), rgba(204, 204, 204, 0.5)); /* Gradient for smooth blend */
+            z-index: -1; /* Pushes the background below the text */
+            border-radius: 5px; /* Rounded corners to match the shape of letters */
+        }
+        
+        /* Main content area */
+        .content {
+            background-color: #cad7ca; /* Eggshell white background */
+            border-radius: 10px; /* Rounded corners */
+            margin-left: 220px;
+            padding: 20px;
+            font-family: 'Book Antiqua', serif; /* Set font family to Book Antiqua */
+            color: #333; /* Text color */
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            border-radius: 50%; /* Rounded image */
+            width: 200px; /* Adjusted width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 15px;
+        }
+
+        .profile h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333; /* Title color */
+        }
+
+        .profile h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #666; /* Subtitle color */
+        }
+
+        .profile h4.email {
+            margin: 5px 0; /* Adjusted margins */
+            font-style: italic;
+            color: #666; /* Email color */
+        }
+
+        .profile p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left; /* Justify text to the left */
+            font-style: italic; /* Change font style to italic */
+        }
+
+        /* Two-column layout */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            width: 48%; /* Adjusted width for columns */
+        }
+
+        .column ul {
+            list-style: disc; /* Bulleted list */
+            padding-left: 20px; /* Add indentation */
+            text-align: left; /* Left align the bullet points */
+        }
+
+        /* Reverting to previous colors */
+        .dark-blue {
+            color: #1a237e; /* Dark blue */
+        }
+
+        .light-blue {
+            color: #2196f3; /* Light blue */
+        }
+
+        .green {
+            color: #4caf50; /* Green */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="teaching.html">Teaching</a>
+        <a href="research.html">Research</a>
+        <a href="programming.html">Programming</a>
+        <a href="statistical_consulting.html">Statistical Consulting</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+        <div class="profile">
+            <img src="https://imagizer.imageshack.com/img922/2999/Kg1RvM.jpg" alt="Profile Picture">
+            <h2>Dr. Kyle Parrish</h2>
+            <h3>Postdoctoral Researcher in Hispanic Linguistics</h3>
+            <h4 class="email"><a href="mailto:kparrish.linguistics@gmail.com">kparrish.linguistics@gmail.com</a></h4>
+
+            <p>
+                I am a Postdoctoral Researcher at Goethe University Frankfurt in the Institute for Romance Languages and Literatures. I hold a PhD in Second Language Acquisition and Bilingualism from the Department of Spanish and Portuguese at Rutgers University. My main interests are in third language acquisition, quantitative methods, phonetics and phonology, and language pedagogy. My primary aim/interest is how bilinguals acquire the phonetics and phonology of a third language. Additionally, I am interested in how the statistical tools that we use in research relate to our narrative conclusions. My recent projects have involved novel-language production by bilinguals, perception in the same population, and exploratory analysis related to which factors might be associated with the variation observed in cross-linguistic influence from either a first or second language in third language learning, and simulation studies examining repeated measures in phonetics. Outside of work and school, I love dogs, American football (go Panthers!) and language learning.
+            </p>
+
+            <div class="columns">
+                <div class="column" style="text-align: left;">
+                    <h4>Interests</h4>
+                    <ul>
+                        <li>Third Language acquisition</li>
+                        <li>Quantitative methods</li>
+                        <li>Phonetics/Phonology</li>
+                        <li>Second language acquisition</li>
+                        <li>Bilingualism</li>
+                        <li>Statistics/Data visualization</li>
+                    </ul>
+                </div>
+                <div class="column" style="text-align: left;">
+                    <h4>Education</h4>
+                    <ul>
+                        <li>PhD in Second Language Acquisition and Bilingualism, 2023 - Rutgers University</li>
+                        <li>MA in Spanish, 2018 - The University of North Carolina at Charlotte</li>
+                        <li>BA in Spanish and German, 2016 - The University of North Carolina at Charlotte</li>
+                    </ul>
+                </div>
+            </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
