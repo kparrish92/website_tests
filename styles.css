@@ -1,0 +1,66 @@
+/* Add a viewport meta tag to ensure proper scaling on mobile devices */
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+/* Add vendor prefixes for flexbox */
+.sidebar {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.content {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+/* Adjustments for Safari and mobile */
+.sidebar {
+    background-color: #85DCB;
+    padding-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Book Antiqua', serif;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* No changes to hover effect */
+
+.content {
+    background-color: #cad7ca;
+    border-radius: 10px;
+    margin-left: 220px;
+    padding: 20px;
+    font-family: 'Book Antiqua', serif;
+    color: #333;
+}
+
+/* No changes to profile styles */
+
+.columns {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+/* No changes to other styles */
